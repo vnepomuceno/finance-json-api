@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "finance-json-api"
+version = "0.1.0"
+description = ""
+authors = ["Valter Nepomuceno <valter.nep@proton.me>"]
+readme = "README.md"
+packages = [{include = "finance_json_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.108.0"
+uvicorn = "^0.25.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
