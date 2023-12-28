@@ -19,7 +19,9 @@ def read_root():
 
 @app.get("/salary")
 def read_salary():
-    salary = Salary(company='Ice Cream C&A', liquid_salary=2_000, date=datetime(2023, 12, 24))
+    salary = Salary(
+        company="Ice Cream C&A", liquid_salary=2_000, date=datetime(2023, 12, 24)
+    )
     return salary.model_dump()
 
 
