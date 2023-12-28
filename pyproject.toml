@@ -4,12 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Valter Nepomuceno <valter.nep@proton.me>"]
 readme = "README.md"
-packages = [{include = "finance_json_api"}]
+packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.108.0"
 uvicorn = "^0.25.0"
+pydantic = "^2.5.3"
 
 
 [build-system]
